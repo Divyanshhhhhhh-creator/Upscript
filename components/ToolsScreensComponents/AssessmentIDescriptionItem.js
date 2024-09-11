@@ -1,5 +1,4 @@
 import { StyleSheet, View, Text } from "react-native";
-import Feather from "@expo/vector-icons/Feather";
 
 function AssessmentDescriptionItem({
   title,

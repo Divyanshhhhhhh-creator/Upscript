@@ -1,5 +1,4 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -15,6 +14,9 @@ import GuideScreen from "./screens/GuideScreen";
 import CommunityScreen from "./screens/CommunityScreen";
 import ConnectScreen from "./screens/ConnectScreen";
 import AIScreeningScreen from "./screens/Tools Screens/AIScreeningScreen";
+import ImageConfirmScreen from "./screens/Tools Screens/ImageConfirmScreen";
+import QuestionnaireScreen1 from "./screens/Tools Screens/QuestionnaireScreen1";
+import QuestionnaireScreen2 from "./screens/Tools Screens/QuestionnaireScreen2";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -24,6 +26,9 @@ function ToolsStackNavigator() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="ToolsStart" component={ToolsScreen} />
       <Stack.Screen name="AIScreening" component={AIScreeningScreen} />
+      <Stack.Screen name="ImageConfirm" component={ImageConfirmScreen} />
+      <Stack.Screen name="Questionnaire1" component={QuestionnaireScreen1} />
+      <Stack.Screen name="Questionnaire2" component={QuestionnaireScreen2} />
     </Stack.Navigator>
   );
 }
@@ -111,5 +116,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create();
