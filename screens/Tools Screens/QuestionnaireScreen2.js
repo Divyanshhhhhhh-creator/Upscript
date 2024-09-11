@@ -8,6 +8,7 @@ import QuestionnaireOptionsItem from "../../components/ToolsScreensComponents/Qu
 function QuestionnaireScreen2({ navigation }) {
   function submitButtonPressHandler() {
     console.log(answers);
+    navigation.navigate("QuizStart");
   }
 
   const [answers, setAnswers] = useState({

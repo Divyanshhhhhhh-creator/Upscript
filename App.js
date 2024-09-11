@@ -17,18 +17,23 @@ import AIScreeningScreen from "./screens/Tools Screens/AIScreeningScreen";
 import ImageConfirmScreen from "./screens/Tools Screens/ImageConfirmScreen";
 import QuestionnaireScreen1 from "./screens/Tools Screens/QuestionnaireScreen1";
 import QuestionnaireScreen2 from "./screens/Tools Screens/QuestionnaireScreen2";
+import QuizStartScreen from "./screens/Tools Screens/QuizStartScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
 function ToolsStackNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator
+      screenOptions={{ headerShown: false }}
+      initialRouteName="QuizStart"
+    >
       <Stack.Screen name="ToolsStart" component={ToolsScreen} />
       <Stack.Screen name="AIScreening" component={AIScreeningScreen} />
       <Stack.Screen name="ImageConfirm" component={ImageConfirmScreen} />
       <Stack.Screen name="Questionnaire1" component={QuestionnaireScreen1} />
       <Stack.Screen name="Questionnaire2" component={QuestionnaireScreen2} />
+      <Stack.Screen name="QuizStart" component={QuizStartScreen} />
     </Stack.Navigator>
   );
 }
