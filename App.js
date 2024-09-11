@@ -24,10 +24,7 @@ const Stack = createNativeStackNavigator();
 
 function ToolsStackNavigator() {
   return (
-    <Stack.Navigator
-      screenOptions={{ headerShown: false }}
-      initialRouteName="QuizStart"
-    >
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="ToolsStart" component={ToolsScreen} />
       <Stack.Screen name="AIScreening" component={AIScreeningScreen} />
       <Stack.Screen name="ImageConfirm" component={ImageConfirmScreen} />
