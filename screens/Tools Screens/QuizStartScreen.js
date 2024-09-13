@@ -5,7 +5,7 @@ import { Colors } from "../../constants/Colors";
 
 function QuizStartScreen({ navigation }) {
   function startQuizButtonPressHandler() {
-    console.log("PRESSED");
+        navigation.navigate("Quiz")
   }
 
   return (

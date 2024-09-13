@@ -4,6 +4,7 @@ import { RadioButton } from "react-native-paper";
 
 import { Colors } from "../../constants/Colors";
 import QuestionnaireOptionsItem from "../../components/ToolsScreensComponents/QuestionnaireOptionsItem";
+import { NavigationRouteContext } from "@react-navigation/native";
 
 function QuestionnaireScreen2({ navigation }) {
   function submitButtonPressHandler() {
