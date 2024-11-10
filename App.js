@@ -56,7 +56,7 @@ export default function App() {
           },
           tabBarActiveTintColor: "white",
         }}
-        // initialRouteName="Tools"
+        initialRouteName="Home"
       >
         {/* Tools */}
 

@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 import SectionButton from "../components/HomeScreenComponents/SectionButton";
 import AssessmentToolsLogo from "../assets/images/assessment_tools.svg";
